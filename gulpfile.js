@@ -15,15 +15,15 @@ gulp.task('js', function(){
         .pipe(browserSync.stream());
 });
 
-// gulp.task('serve', ['sass'], function(){
-//     browserSync.init({
-//         server: { baseDir:"./src"},
-//         port: process.env.PORT || 5000
-//     });
+gulp.task('serve', ['sass'], function(){
+    browserSync.init({
+        server: { baseDir:"./src"},
+        port: process.env.PORT || 5000
+    });
 
-//     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
-//     gulp.watch("src/*.html").on('change', browserSync.reload);
-// });
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
+    gulp.watch("src/*.html").on('change', browserSync.reload);
+});
 
 gulp.task('fonts', function(){
     return gulp.src('node_modules/font-awesome/fonts/*')
