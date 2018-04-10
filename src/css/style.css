@@ -53,7 +53,7 @@ nav #nav2 {
 #showcase {
   position: relative;
   min-height: 100%;
-  background: url("../img/cb-clash-family2.jpg");
+  background: url("../img/cb-clash-family.jpg") no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -62,7 +62,7 @@ nav #nav2 {
   #showcase em {
     font-family: 'Lobster', san-serif; }
   #showcase p {
-    width: 75%; }
+    width: 60%; }
 
 #course .course {
   display: inline-block;
@@ -72,7 +72,7 @@ nav #nav2 {
     position: absolute;
     max-width: 100%;
     height: auto;
-    left: 0px; }
+    left: -150px; }
   #course .course .banner img {
     border-left: 2px solid #020036; }
 
@@ -146,3 +146,88 @@ nav #nav2 {
     max-width: 100%;
     height: auto;
     left: 0px; }
+
+#academy {
+  background-image: url("../img/cb-academy.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height: 850px;
+  padding-top: 20px; }
+
+.stepList {
+  border-left: 1px solid #020036; }
+
+.stepList li {
+  list-style-type: none;
+  margin-bottom: 30px;
+  margin-left: 12px;
+  position: relative; }
+
+.stepList li:before {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  content: '';
+  display: block;
+  height: 100px;
+  left: -100px;
+  position: absolute;
+  top: -30px;
+  width: 65px; }
+
+.stepList li:after {
+  background: #020036;
+  border-radius: 50%;
+  content: ' ';
+  height: 7px;
+  left: -16px;
+  position: absolute;
+  top: 11px;
+  width: 7px; }
+
+button {
+  border: 1px solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+  max-width: 270px;
+  padding: 8px 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s all ease-in-out;
+  white-space: nowrap;
+  width: 100%; }
+
+#panel h1 {
+  padding-top: 150px;
+  padding-right: 200px; }
+
+.purpleBtn {
+  background-color: #020036 !important;
+  border-color: #020036 !important; }
+
+a {
+  color: white; }
+
+.step1Icon:before {
+  background-image: url("../svg/step1-icon.svg"); }
+
+.step2Icon:before {
+  background-image: url("../svg/step2-icon.svg"); }
+
+.step3Icon:before {
+  background-image: url("../svg/step3-icon.svg"); }
+
+.step4Icon:before {
+  background-image: url("../svg/step4-icon.svg"); }
+
+.step5Icon:before {
+  background-image: url("../svg/step5-icon.svg"); }
+
+.step6Icon:before {
+  background-image: url("../svg/step6-icon.svg"); }
